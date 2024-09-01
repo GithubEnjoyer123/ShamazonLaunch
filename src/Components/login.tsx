@@ -1,4 +1,5 @@
 import "./loginTemp.css";
+console.log("App compoent is rednering ");
 function login() {
   return (
     <div className="login-container">
