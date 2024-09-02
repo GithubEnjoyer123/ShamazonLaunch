@@ -1,6 +1,7 @@
-/* General styles */
+
 body {
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
+    /* font-family: 'Inter', sans-serif; */
     background-color: #f0f2f5;
     margin: 0;
     padding: 0;
@@ -9,7 +10,16 @@ body {
     align-items: center;
     height: 100vh;
   }
-  
+
+  /* Not sure exactly what the below code does, the idea is supposed to help with the font sty;e to be similar to flozy */
+  .login-container h2,
+.login-container p,
+.login-input,
+.login-button,
+.signup-link a {
+    font-family: 'Inter', sans-serif;
+}
+
   .login-container {
     background-color: #ffffff;
     padding: 2rem;
@@ -171,5 +181,12 @@ body {
       font-size: 0.875rem;
       padding: 0.5rem;
     }
+  }
+  
+  .google-button img {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
   }
   

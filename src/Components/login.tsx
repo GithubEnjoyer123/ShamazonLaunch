@@ -15,6 +15,7 @@ function login() {
               type="text"
               placeholder="Email Address"
               className="login-input"
+              required
             />
             <span className="input-icon">
               <i className="uil uil-envelope"></i>
@@ -25,6 +26,7 @@ function login() {
               type="passowrd"
               placeholder="Password"
               className="login-input"
+              required
             />
             <span className="input-icon">
               <i className="uil uil-lock-alt"></i>
@@ -36,7 +38,7 @@ function login() {
               <label htmlFor="remmber">Remember Me</label>
             </div>
             <a href="#" className="forgot-password">
-              Forgot Passowrd
+              Forgot Passowrd ?
             </a>
           </div>
 
@@ -47,7 +49,10 @@ function login() {
             <span>Or sign in with</span>
           </div>
           <button type="button" className="google-button">
-            <img src="" alt="Google logo" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png"
+              alt="Google logo"
+            />
             Google
           </button>
         </form>
