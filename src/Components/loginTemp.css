@@ -11,7 +11,8 @@ body {
     height: 100vh;
   }
 
-  /* Not sure exactly what the below code does, the idea is supposed to help with the font sty;e to be similar to flozy */
+  /* Not sure exactly what the below code does, the idea is supposed to help with the font sty;e to be similar to flozy 
+  REMOVING IT won't afffect the page */
   .login-container h2,
 .login-container p,
 .login-input,
@@ -31,7 +32,7 @@ body {
   }
   
   .login-title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.0rem;
     font-size: 1.75rem;
     font-weight: bold;
     color: #2e3a59;
@@ -49,7 +50,7 @@ body {
   }
   
   .login-input {
-    width: 100%;
+    width: 90%;
     padding: 0.75rem 2.5rem 0.75rem 1rem;
     border: 1px solid #d1d5db;
     border-radius: 5px;
@@ -86,6 +87,7 @@ body {
   .forgot-password {
     color: #1d4ed8;
     text-decoration: none;
+    margin-right: -10px;
   }
   
   .forgot-password:hover {
@@ -127,7 +129,7 @@ body {
     margin: 0 1rem;
   }
   
-  /* Google button */
+
   .google-button {
     width: 100%;
     padding: 0.75rem;
@@ -146,11 +148,14 @@ body {
   .google-button img {
     margin-right: 0.5rem;
   }
+ 
   
   .google-button:hover {
     background-color: #e5e7eb;
   }
-  
+  .apple-button:hover{
+    background-color: #e5e7eb;
+  }
   /* Signup link */
   .signup-link {
     margin-top: 1.5rem;
@@ -180,13 +185,35 @@ body {
     .login-input, .login-button, .google-button {
       font-size: 0.875rem;
       padding: 0.5rem;
+
     }
   }
   
   .google-button img {
     margin-right: 0.5rem;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
   }
-  
+
+  .apple-button img{
+    margin-right: 0.5rem;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  .apple-button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    color: #111827;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

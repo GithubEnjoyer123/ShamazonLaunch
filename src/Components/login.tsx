@@ -4,7 +4,7 @@ import React from "react"; // eslint-disable-next-line no-unused-vars
 function login() {
   return (
     <React.Fragment>
-      <div className="login-contianer">
+      <div className="login-container">
         <h2 className="login-title"> Sign in to your Account</h2>
         <p className="login-subtitle">
           Welcome back! Please enter your details
@@ -50,10 +50,14 @@ function login() {
           </div>
           <button type="button" className="google-button">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png"
+              src="/src/assets/google-icon-2048x2048-tmg5cp5v.png"
               alt="Google logo"
             />
-            Google
+            Continue with Google
+          </button>
+          <button type="button" className="apple-button">
+            <img src="/src/assets/apple_2048_black.png" alt="Apple Logo" />
+            Continue with Apple
           </button>
         </form>
         <p className="signup-link">
