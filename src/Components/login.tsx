@@ -5,7 +5,7 @@ function login() {
   return (
     <React.Fragment>
       <div className="login-container">
-        <h2 className="login-title"> Sign in to your Account</h2>
+        <h2 className="login-title"> Sign In</h2>
         <p className="login-subtitle">
           Welcome back! Please enter your details
         </p>
