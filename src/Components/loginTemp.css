@@ -10,16 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-
-  /* Not sure exactly what the below code does, the idea is supposed to help with the font style to be similar to flozy 
-  REMOVING IT won't afffect the page */
-  .login-container h2,
-.login-container p,
-.login-input,
-.login-button,
-.signup-link a {
-    font-family: 'Inter', sans-serif;
 }
 
   .login-container {
