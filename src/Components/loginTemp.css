@@ -1,5 +1,5 @@
 /* Updates / Work that needs to be completed */
-/* Replace current png files with svg files for better quality & ligther files during scaling (zooming) */
+
 body {
     /* font-family: 'Arial', sans-serif; */
     /* font-family: 'Inter', sans-serif; */
@@ -12,7 +12,7 @@ body {
     height: 100vh;
   }
 
-  /* Not sure exactly what the below code does, the idea is supposed to help with the font sty;e to be similar to flozy 
+  /* Not sure exactly what the below code does, the idea is supposed to help with the font style to be similar to flozy 
   REMOVING IT won't afffect the page */
   .login-container h2,
 .login-container p,
@@ -198,15 +198,15 @@ body {
   
   .google-button img {     
     margin-right: 0.5rem;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     vertical-align: middle;
   }
 
   .apple-button img{
     margin-right: 0.5rem;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     vertical-align: middle;
   
   }

@@ -50,13 +50,13 @@ function login() {
           </div>
           <button type="button" className="google-button">
             <img
-              src="/src/assets/google-icon-2048x2048-tmg5cp5v.png"
+              src="/src/assets/7123025_logo_google_g_icon.svg"
               alt="Google logo"
             />
             Continue with Google
           </button>
           <button type="button" className="apple-button">
-            <img src="/src/assets/apple_2048_black.png" alt="Apple Logo" />
+            <img src="/src/assets/104490_apple_icon.svg" alt="Apple Logo" />
             Continue with Apple
           </button>
         </form>
