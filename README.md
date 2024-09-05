@@ -10,4 +10,4 @@ First, make sure you're in the correct folder after cloning in your terminal (Sh
 2. Run in dev environment. Type `npm run dev`
 3. Open up the localhost that appears for your (ctrl click to automatically open)
 
-\*This repository is in active development (For mow)
+\*This repository is in active development
