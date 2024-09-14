@@ -1,12 +1,18 @@
 import React from "react";
-import Login from "./Components/login";
-import "./app.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import router components
+import Login from "./Components/login"; // Import Login component
+import Navbar from "./Components/navbar"; // Import Navbar component
+import "./app.css"; // Import styles
 
 function App() {
   return (
-    <React.Fragment>
-      <Login />
-    </React.Fragment>
+    <Router>
+      <Routes>
+        {/* Define separate routes for each page */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/navbar" element={<Navbar />} />
+      </Routes>
+    </Router>
   );
 }
 
