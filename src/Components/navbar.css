@@ -1,10 +1,15 @@
 .navbar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     padding: 10px 20px;
     border-bottom: 1px solid #e0e0e0;
+    
   }
   
   .navbar-left {
@@ -46,19 +51,25 @@
     display: flex;
     align-items: center;
   }
-  
   .search-bar {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f8f8f8; /* Slight background color */
+    margin-left: -40%;
   }
   
   .search-bar input {
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    border-radius: 3px;
+    border: none;
     outline: none;
+    padding: 5px;
     font-size: 16px;
+    border-radius: 20px;
+    background-color: transparent; /* Make the background transparent */
   }
   
   .search-bar button {
@@ -67,7 +78,14 @@
     cursor: pointer;
     font-size: 18px;
     margin-left: 5px;
+    color: #333;
+    transition: color 0.3s ease;
   }
+  
+  .search-bar button:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
   
   .icon-button {
     background: none;
