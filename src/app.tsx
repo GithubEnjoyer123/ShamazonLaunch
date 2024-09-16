@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Define separate routes for each page */}
+        {/* Define separate routes for each page  Routing process for which page would be the landing page */}
         <Route path="/login" element={<Login />} />
         <Route path="/navbar" element={<Navbar />} />
       </Routes>
