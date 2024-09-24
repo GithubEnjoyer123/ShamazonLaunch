@@ -15,7 +15,7 @@ function App() {
       <Routes>
         {/* Define separate routes for each page  Routing process for which page would be the landing page */}
         <Route path="/" element={<Navigate to="/navbar" />} />
-        {/* The line (ln 17) above allows the webpage to go a specific landing page, for DEV stage's it would be navbar */}
+        {/* The line (ln 17) above allows the webpage to go a specific landing page, for the DEV stage's it would be navbar */}
 
         <Route path="/login" element={<Login />} />
         <Route path="/navbar" element={<Navbar />} />

@@ -1,8 +1,10 @@
 import "./navbar.css";
 import React from "react";
 import { FaSearch, FaUserAlt, FaShoppingCart, FaBars } from "react-icons/fa"; // Import icons from react-icons
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <React.Fragment>
       <nav className="navbar">
@@ -36,7 +38,7 @@ function Navbar() {
           </div>
 
           {/* User Icon */}
-          <button className="icon-button">
+          <button className="icon-button" onClick={() => navigate("/login")}>
             <FaUserAlt />
           </button>
 
