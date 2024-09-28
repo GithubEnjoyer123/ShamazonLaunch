@@ -1,19 +1,51 @@
 import "./navbar.css";
+import { useState } from "react";
 import React from "react";
-import { FaSearch, FaUserAlt, FaShoppingCart, FaBars } from "react-icons/fa"; // Import icons from react-icons
+import {
+  FaSearch,
+  FaUserAlt,
+  FaShoppingCart,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa"; // Import icons from react-icons
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Setting the natural state of the hamburger menu to be false
+
+  const handleMenuToggle = () => {
+    console.log(isMenuOpen);
+    setIsMenuOpen(!isMenuOpen); // Toggle menu state
+  };
+
   return (
     <React.Fragment>
       <nav className="navbar">
         <div className="navbar-left">
           {/* Hamburger menu */}
-          <button className="menu-button">
-            <FaBars />
+          {/* <button className="menu-button" onClick={handleMenuToggle}>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button> */}
+
+          <button className="menu-button" onClick={handleMenuToggle}>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
 
+          <div className={`off-screen-menu ${isMenuOpen ? "active" : ""}`}>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          {/* <nav>
+            <div className="ham-menu" onClick={handleMenuToggle}>
+              <span></span>
+              <span></span>
+              <span> </span>
+            </div>
+          </nav> */}
           {/* Navigation Links */}
           <ul className="navbar-links">
             <li>
