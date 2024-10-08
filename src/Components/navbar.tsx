@@ -34,9 +34,9 @@ function Navbar() {
 
           <div className={`off-screen-menu ${isMenuOpen ? "active" : ""}`}>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li>Toys</li>
+              <li>Skincare</li>
+              <li>Supplements</li>
             </ul>
           </div>
           {/* <nav>

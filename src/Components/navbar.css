@@ -19,8 +19,8 @@
   
   .menu-button {
     position: absolute;
-    top: 10px;
-    left: 10px; /* Or adjust as needed */
+    top: 19px;
+    left: 20px; /* Or adjust as needed */
     z-index: 1000; /* Ensure it's on top of other elements */
     background: none;
     border: none;
@@ -103,14 +103,14 @@
   }
 
   .off-screen-menu {
-    background-color: rgb(34, 37, 49);
+    background-color: #ccc8c0;
     height: 100vh;  /* Set full height */
     width: 100%;
-    max-width: 450px;
+    max-width: 450px; /* Determine how far the slide comes out */
     position: fixed;
     top: 0;
     left: -450px; /* Initially off-screen */
-    display: flex; /* Hidden by default */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,6 @@
   }
   
   .off-screen-menu.active {
-  
     left: 0; /* Slide in */
   }
   
@@ -163,3 +162,23 @@
     top: 50%;
     transform: translate(-50%, -50%); rotate: (45deg);
   }
+  
+  .off-screen-menu ul {
+    list-style: none; /* Remove bullets from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    left: -20px; /* Move the text 20px to the left */
+  top: -20px; /* Move the text 20px upwards */
+}
+.off-screen-menu li{
+  margin: 30px 0; /* Adjust the vertical spacing between the menu items */
+    font-size: 2.2rem; /* Keep the current font size */
+    position: relative; /* This allows for absolute positioning of children elements */
+    left: -90px; /* Move the text 20px to the left */
+    top: -25vh; 
+}
+
+
+
+
+  
