@@ -8,10 +8,9 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa"; // Import icons from react-icons
-import { useNavigate } from "react-router-dom";
+// Removed useNavigate from react-router-dom
 
 function Navbar() {
-  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Setting the natural state of the hamburger menu to be false
 
   const handleMenuToggle = () => {
@@ -24,10 +23,6 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-left">
           {/* Hamburger menu */}
-          {/* <button className="menu-button" onClick={handleMenuToggle}>
-            {isMenuOpen ? <FaTimes /> : <FaBars />}
-          </button> */}
-
           <button className="menu-button" onClick={handleMenuToggle}>
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
@@ -39,13 +34,7 @@ function Navbar() {
               <li>Supplements</li>
             </ul>
           </div>
-          {/* <nav>
-            <div className="ham-menu" onClick={handleMenuToggle}>
-              <span></span>
-              <span></span>
-              <span> </span>
-            </div>
-          </nav> */}
+
           {/* Navigation Links */}
           <ul className="navbar-links">
             <li>
@@ -70,8 +59,12 @@ function Navbar() {
           </div>
 
           {/* User Icon */}
-          <button className="icon-button" onClick={() => navigate("/login")}>
-            <FaUserAlt />
+          <button className="icon-button">
+            <a href="/login">
+              {" "}
+              {/* Replaced navigate with a regular link */}
+              <FaUserAlt />
+            </a>
           </button>
 
           {/* Cart Icon */}
