@@ -6,14 +6,8 @@ const homePageContent = () => {
     <div className="homepage">
       <header className="header">
         <div className="logo">Shamazon</div>
-        <nav className="nav">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#deals">Deals</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </nav>
+        <nav className="nav"></nav>
+        
         <div className="user-icons">
           <a href="#account" className="icon">Account</a>
           <a href="#cart" className="icon">Cart</a>
