@@ -159,8 +159,9 @@ button {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Show 3 products per row */
   gap: 20px;
+  justify-content: center; /* Center the grid items */
 }
 
 .product-card {
