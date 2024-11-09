@@ -7,11 +7,6 @@ const homePageContent = () => {
       <header className="header">
         <div className="logo">Shamazon</div>
         <nav className="nav"></nav>
-        
-        <div className="user-icons">
-          <a href="#account" className="icon">Account</a>
-          <a href="#cart" className="icon">Cart</a>
-        </div>
       </header>
 
       <section className="hero">
