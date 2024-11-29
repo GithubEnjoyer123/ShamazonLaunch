@@ -7,7 +7,11 @@ import {
   FaShoppingCart,
   FaBars,
   FaTimes,
-} from "react-icons/fa"; // Import icons from react-icons
+} from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { Link } from "react-router-dom";
+
+// Import icons from react-icons
 // Removed useNavigate from react-router-dom
 
 function Navbar() {
@@ -59,18 +63,14 @@ function Navbar() {
           </div>
 
           {/* User Icon */}
-          <button className="icon-button">
-            <a href="/login">
-              {" "}
-              {/* Replaced navigate with a regular link */}
-              <FaUserAlt />
-            </a>
-          </button>
+          <Link to="/login" className="icon-button">
+            <FaUserAlt size={24} />
+          </Link>
 
-          {/* Cart Icon */}
-          <button className="icon-button">
-            <FaShoppingCart />
-          </button>
+          {/* Mail Icon for Contact Page */}
+          <Link to="/contact" className="icon-button">
+            <IoMdMail size={24} />
+          </Link>
         </div>
       </nav>
     </React.Fragment>

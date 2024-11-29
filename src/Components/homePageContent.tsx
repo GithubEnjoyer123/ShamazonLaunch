@@ -1,8 +1,12 @@
 import React from "react";
-import "./homePageContent.css";
+import "./homePageContent.css"; // Import CSS for styling if needed
 
-const homePageContent = () => {
-  return <h1>Testimg out the homepage content component</h1>;
+const HomePageContent = () => {
+  return (
+    <React.Fragment>
+      <h1>The Collection</h1>
+    </React.Fragment>
+  );
 };
 
-export default homePageContent;
+export default HomePageContent;
